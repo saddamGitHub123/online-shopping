@@ -33,7 +33,7 @@
 
 <!-- Bootstrap Readable Theme -->
 <%-- <link href="vendor/bootstrap/${css}/bootstrap.min.css" rel="stylesheet"> --%>
-<%-- <link href="${css}/bootstrap-readble-theme.css" rel="stylesheet"> --%>
+<link href="${css}/bootstrap-readble-theme.css" rel="stylesheet">
 
 
 
@@ -65,6 +65,10 @@
 			<!-- Loading only when user clicks cotact -->
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			<!-- Loading only when user clicks All product or click product -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>
