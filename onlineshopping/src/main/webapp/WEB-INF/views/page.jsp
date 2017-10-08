@@ -25,6 +25,8 @@
 
 <script>
 	window.menu = '${title}';
+	
+	window.contextRoot = '${contextRoot}'
 </script>
 
 <!-- Bootstrap core CSS -->
@@ -34,6 +36,11 @@
 <!-- Bootstrap Readable Theme -->
 <%-- <link href="vendor/bootstrap/${css}/bootstrap.min.css" rel="stylesheet"> --%>
 <link href="${css}/bootstrap-readble-theme.css" rel="stylesheet">
+
+
+<!-- Bootstrap DataTable Theme -->
+<%-- <link href="vendor/bootstrap/${css}/bootstrap.min.css" rel="stylesheet"> --%>
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 
 
@@ -76,7 +83,7 @@
 		<!-- /.container -->
 
 
-		<!-- Footer -->
+		<!-- Footer Comes Here-->
 		<%@include file="./shared/footer.jsp"%>
 
 
@@ -90,6 +97,16 @@
     <script src="vendor/popper/popper.min.js"></script> --%>
 		<<%-- script src="${js}/popper.min.js"></script> --%> <script
 		src="${js}/bootstrap.min.js"></script>
+		
+			<!-- DataTable Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		
+				
+			<!-- DataTable bootstraps Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+
+		
 
 		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>
